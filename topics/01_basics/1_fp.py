@@ -9,11 +9,6 @@
 # Licence:     <your licence>
 #---------------------------------------------------------------------------------------
 
-name = "Tony Stark"
+# This Program prints "Hello World" to the console.
 
-print(name.find('S'))
-print(name.find('s'))
-print(name.find('Stark'))
-print(name.replace("Tony Stark", "Iron Man"))
-print(name.replace("Stark", "Iron Man"))
-print(name)
+print("Hello World")
