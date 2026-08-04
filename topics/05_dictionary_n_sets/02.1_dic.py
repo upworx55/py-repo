@@ -40,3 +40,14 @@ print(student["name2"])  # Output: KeyError, since the key "name2" does not exis
 print(student.get("name2"))  # Output: None, since the key "name2" does not exist in the dictionary.
 print(student.get("name2", "Default Value"))  # Output: Default Value, since the key "name2" does not exist in the dictionary and a default value is provided.
 
+# 5. update(): Updates the dictionary with the specified key-value pairs. If the key already exists, its value will be updated; if the key does not exist, a new key-value pair will be added.
+student.update({"name": "Rahul Sharma", "age": 20})  # Updating the value of the existing key "name" and adding a new key-value pair "age": 20
+print(student)  # Output: {'name': 'Rahul Sharma', 'subjects': {'Math': 90, 'Science': 85, 'English': 92}, 'age': 20}
+
+new_dict = {"gender": "Male", "city": "Delhi"}
+student.update(new_dict)  # Updating the dictionary with the key-value pairs from new_dict
+print(student)  # Output: {'name': 'Rahul Sharma', 'subjects': {'Math': 90, 'Science': 85, 'English': 92}, 'age': 20, 'gender': 'Male', 'city': 'Delhi'}
+
+
+
+
