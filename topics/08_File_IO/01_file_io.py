@@ -31,12 +31,23 @@ Common Combinations:
 # "r" and "rt" are the same, as are "w" and "wt", "a" and "at", etc. The default mode is "rt" (read text).
 # If we want to read a file in binary mode, we can use "rb" instead of "r".
 
-f = open("demo.txt", "r")
-data = f.read(5)  # Read the first 5 characters of the file
+# read() method reads the entire file and returns it as a string. If we want to read a specific number of characters from the file, we can pass an integer argument to the read() method.
+f1 = open("demo.txt", "r")
+data = f1.read(5)  # Read the first 5 characters of the file
 print(data)
-line1 = f.readline()  # Read the next line of the file
+f1.close()
+
+# readline() method reads a single line from the file. If we want to read multiple lines, we can call readline() multiple times or use a loop to read all lines.
+f2 = open("demo.txt", "r")
+line1 = f2.readline()  # Read the next line of the file. (If read() has already been called and therafter readline() is called, it will read the next line from the current position in the file.)
 print(line1)  
-f.close()
+f2.close()
+
+# readlines() method reads all the lines of the file and returns them as a list of strings.
+f3 = open("demo.txt", "r")
+lines = f3.readlines()  # Read all lines of the file
+print(lines)
+f3.close()
 
 
 
