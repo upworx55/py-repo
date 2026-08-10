@@ -3,11 +3,6 @@
 # When the same operator is allowed to have different meaning according to the context.
 
 """
-Operators & Dunder functions:
-# Operator overloading is a feature in Python that allows us to define the behavior of operators for user-defined classes. 
-# This is done by implementing special methods, also known as "dunder" methods (short for "double underscore"), in the class. 
-# These methods allow us to customize how operators work with instances of our class.
-
 # ==========================================
 # Operators & Dunder (Magic) Functions
 # ==========================================
@@ -85,3 +80,17 @@ Operator	    Function
 
 
 """
+
+# Polymorphism:
+# Polymorphism is the ability of different classes to be treated as instances of the same class through a common interface. 
+# It allows methods to do different things based on the object it is acting upon.
+    
+class Bird:
+    def speak(self):
+        return "Chirp!"
+
+# Usage:
+bird = Bird()
+print(bird.speak())  # Output: Chirp!
+
+

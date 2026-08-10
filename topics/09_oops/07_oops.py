@@ -76,14 +76,6 @@ person = Person("Alice", 30)
 print(person.get_name())  # Output: Alice
 print(person.get_age())   # Output: 30
 
-# 4. Polymorphism:
-# Polymorphism is the ability of different classes to be treated as instances of the same class through a common interface. 
-# It allows methods to do different things based on the object it is acting upon.
-class Bird:
-    def speak(self):
-        return "Chirp!"
-# Usage:
-bird = Bird()
-print(bird.speak())  # Output: Chirp!
+
 
 

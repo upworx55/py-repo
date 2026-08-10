@@ -1,5 +1,4 @@
 
-from numpy import real
 
 class Complex:
     def __init__(self, real, imag):
@@ -100,7 +99,8 @@ class Complex:
         imag_part = (self.imag * other.real - self.real * other.imag) / denominator
         return Complex(real_part, imag_part)
 
-    def __str__(self):
+    def __str__(self):  # This method is called when we use the str() function or print() function on a Complex object. 
+                        # Here, Dunder method __str__ is used to provide a string representation of the Complex object. 
         return f"{self.real} + {self.imag}i"
 
 # Uses:
